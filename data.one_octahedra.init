@@ -1,0 +1,26 @@
+# LAMMPS data file for one octahedron
+7 atoms
+2 atom types
+
+-0.65 0.65 xlo xhi
+-0.65 0.65 ylo yhi
+-0.65 0.65 zlo zhi
+
+Masses
+
+1 0.4
+2 0.2
+
+Atoms
+
+1 1 1 0 0 0 0      # core
+2 1 2 0 0 0 0.375  # +y vertex
+3 1 2 0 0 0 -0.375 # -y vertex
+4 1 2 0 0 0.375 0  # +z vertex
+5 1 2 0 0 -0.375 0 # -z vertex
+6 1 2 0 0.375 0 0  # +x vertex
+7 1 2 0 -0.375 0 0 # -x vertex
+
+# two types of octahedra, types of core and vertices different from octahedra 1
+# run two simulations: one with just pure repulsion like what i have now
+# repulsion between everything except vertices of different typed octahedra

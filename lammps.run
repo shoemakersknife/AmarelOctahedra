@@ -1,0 +1,32 @@
+log log.octahedra.run
+echo both
+atom_style full
+units lj
+boundary p p p
+
+read_data data.one_octahedra.init
+
+replicate 2 1 1
+
+pair_style hybrid lj/cut 1.12246204831 soft 1
+pair_coeff * * lj/cut 1 0.625 0.7015
+pair_coeff * * soft 1 1
+pair_modify shift yes
+
+group octahedra type != 3
+
+group oct2 molecule 2
+displace_atoms oct2 move 0.25 0.0 0.0
+
+
+fix 1 octahedra rigid/nve molecule
+
+pair_coeff 1 1 lj/cut 1 0.625 0.70153878018
+
+dump d1 all atom 1 octahedron.lammpstrj
+
+timestep 0.0005
+run 1000
+
+
+
