@@ -4,7 +4,6 @@
 
 The constructed rigid-body particles maintained their octahedral geometry throughout the simulations, confirming the stability of the implementation. Simulations were conducted over a range of parameter values, including variations in interaction strength and particle geometry, to observe their influence on particle motion and local structuring. Trajectory data were recorded throughout each simulation and subsequently visualized using VMD. Analysis focused on qualitative observation of particle organization, orientation, and short-range correlations rather than long-range structural order.
 
-
 <img width="655" height="632" alt="image" src="https://github.com/user-attachments/assets/c674fbe5-e442-4d80-a734-1447c95c2806" />
 <img width="612" height="623" alt="image" src="https://github.com/user-attachments/assets/483e775a-a142-4df4-8166-a3aeee0625e8" />
 
