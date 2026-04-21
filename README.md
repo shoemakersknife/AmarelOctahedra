@@ -1,6 +1,6 @@
-# AmarelOctahedra
+# Generating Octahedral Particles
 
-*Details of Results*
+*Results*
 
 The constructed rigid-body particles maintained their octahedral geometry throughout the simulations, confirming the stability of the implementation. Simulations were conducted over a range of parameter values, including variations in interaction strength and particle geometry, to observe their influence on particle motion and local structuring. Trajectory data were recorded throughout each simulation and subsequently visualized using VMD. Analysis focused on qualitative observation of particle organization, orientation, and short-range correlations rather than long-range structural order.
 
